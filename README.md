@@ -38,6 +38,23 @@ The detection system operates as an intelligent detection terminal with two inte
 
 ![Detection output examples](docs/assets/detection_output_examples.png)
 
+---
+
+### 🎨 Interactive Diagrams
+
+For a complete visual understanding of the system architecture and performance metrics, please view our **interactive SVG diagrams**:
+
+**[📊 View Interactive Diagrams](docs/diagrams.html)**
+
+This comprehensive visualization includes:
+- **Diagram 1**: ToF Detection Principle with sensor operation details
+- **Diagram 2**: Complete Detection Workflow Pipeline showing all 5 processing steps
+- **Diagram 3**: Performance Metrics Summary and test scenario results
+
+These diagrams are optimized for web viewing and scale perfectly on any device.
+
+---
+
 ## 📁 Repository Structure
 
 ```
@@ -54,7 +71,9 @@ The detection system operates as an intelligent detection terminal with two inte
 │   │       └── test/
 │   ├── tof_triplets/                     # Curated RGB, color, and depth modality triplets
 │   └── raw_tof/                          # Original ToF captures and source annotations
-├── docs/assets/                          # Documentation figures and diagrams
+├── docs/
+│   ├── assets/                           # Original documentation figures and diagrams
+│   └── diagrams.html                     # Interactive SVG visualizations
 ├── experiments/train_exp17/              # Preserved training metrics and evaluation plots
 ├── models/
 │   └── spycamera_yolov5s_best.pt        # Fine-tuned YOLOv5 checkpoint
@@ -151,6 +170,8 @@ The fine-tuned model achieves strong performance metrics (stored in `experiments
 | mAP@0.5 | 0.976 |
 | mAP@0.5:0.95 | 0.671 |
 
+See **[Performance Visualization](docs/diagrams.html)** for graphical representation of these metrics.
+
 ## 🔍 Inference
 
 ### Test Set Inference
@@ -185,6 +206,7 @@ This repository retains essential files for understanding, training, validating,
 - ✅ Pre-trained model checkpoint
 - ✅ Trimmed YOLOv5 runtime (unnecessary frameworks and dependencies removed)
 - ✅ Experiment logs and metrics
+- ✅ Interactive documentation and visualizations
 - ❌ IDE metadata, cache files, and duplicate labels
 - ❌ Framework experiments and unrelated archives
 
@@ -193,6 +215,7 @@ This repository retains essential files for understanding, training, validating,
 - **YOLOv5**: https://github.com/ultralytics/yolov5
 - **Time-of-Flight Imaging**: Comprehensive 3D sensing technology overview
 - **Object Detection**: State-of-the-art computer vision methodology
+- **Interactive Diagrams**: [View SVG Visualizations](docs/diagrams.html)
 
 ## 📄 License
 
@@ -218,6 +241,9 @@ A: The model is trained on 640×640 images. While other resolutions work, perfor
 
 **Q: How can I improve detection accuracy?**  
 A: Consider training with more data, adjusting confidence thresholds, or fine-tuning model parameters.
+
+**Q: Where can I view the system architecture diagrams?**  
+A: Check out our interactive [SVG Diagrams](docs/diagrams.html) which include the ToF detection principle, workflow pipeline, and performance metrics.
 
 ---
 
