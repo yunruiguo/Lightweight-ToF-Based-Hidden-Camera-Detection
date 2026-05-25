@@ -2,7 +2,7 @@
 
 Detect hidden and pinhole cameras using Time-of-Flight (ToF) sensor data with fine-tuned YOLOv5. This project leverages active infrared ToF imaging to identify characteristic lens reflections and provides a complete detection pipeline for intelligent security applications.
 
-![ToF pinhole camera detection principle](docs/assets/tof_detection_principle.png)
+<img src="docs/assets/tof_detection_principle.png" alt="ToF pinhole camera detection principle" width="60%">
 
 ## 📋 Overview
 
@@ -26,7 +26,7 @@ The detection system operates as an intelligent detection terminal with two inte
 
 ## 🔄 Detection Workflow
 
-![Intelligent detection terminal workflow](docs/assets/intelligent_terminal_flow.png)
+<img src="docs/assets/intelligent_terminal_flow.png" alt="Intelligent detection terminal workflow" width="60%">
 
 1. **Capture**: Scan suspected area using the ToF module
 2. **Inference**: Feed ToF image into YOLOv5 detector
@@ -36,7 +36,7 @@ The detection system operates as an intelligent detection terminal with two inte
 
 **Result Example**: The figure below demonstrates detection performance across four test scenarios, comparing annotated ground truth (left) with model predictions and confidence scores (right):
 
-![Detection output examples](docs/assets/detection_output_examples.png)
+<img src="docs/assets/detection_output_examples.png" alt="Detection output examples" width="60%">
 
 ---
 
