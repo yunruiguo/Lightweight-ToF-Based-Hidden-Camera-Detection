@@ -1,0 +1,26 @@
+# Python/runtime artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# IDE/local files
+.idea/
+.vscode/
+.DS_Store
+
+# YOLO generated artifacts
+third_party/yolov5/runs/
+runs/
+*.cache
+
+# Large archives and ad-hoc exports
+*.zip
+*.tar
+*.tar.gz
+
+# Local virtual environments
+.venv/
+venv/
+env/

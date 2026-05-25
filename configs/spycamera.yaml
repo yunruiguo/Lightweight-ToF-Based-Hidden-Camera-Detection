@@ -1,0 +1,12 @@
+# YOLOv5 dataset config for ToF spy-camera detection.
+# Run commands from third_party/yolov5/ and pass:
+#   --data ../../configs/spycamera.yaml
+
+path: ../../data/yolo
+train: images/train
+val: images/test
+test: images/test
+
+names:
+  0: positive
+  1: negative
